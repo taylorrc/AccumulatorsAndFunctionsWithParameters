@@ -30,19 +30,20 @@ def run_test_sum_powers():
     print('--------------------------------------------------')
 
     expected = 36
-    actual = sum_powers(3,3)
-    print('Expected Value' , expected)
+    actual = sum_powers(3, 3)
+    print('Expected Value', expected)
     print('Actual Value', actual)
 
     expected = 225
     actual = sum_powers(5, 3)
-    print('Expected Value' , expected)
+    print('Expected Value', expected)
     print('Actual Value', actual)
 
     expected = 144.45655
     actual = sum_powers(100, 0.1)
-    print('Expected Value' , expected)
+    print('Expected Value', expected)
     print('Actual Value', actual)
+
 
 def sum_powers(n, p):
     """
@@ -64,11 +65,12 @@ def sum_powers(n, p):
     #   test cases; that would defeat the purpose of TESTING!
     # ------------------------------------------------------------------
 
-    sum = n**p
+    sum = n ** p
     for k in range(n):
         sum = sum + k ** p
 
     return sum
+
 
 def run_test_sum_powers_in_range():
     """ Tests the   sum_powers_in_range   function. """
@@ -87,9 +89,18 @@ def run_test_sum_powers_in_range():
 
     expected = 216
     actual = sum_powers_in_range(3, 5, 3)
-    print('Expected Value' , expected)
+    print('Expected Value', expected)
     print('Actual Value', actual)
 
+    expected = 50
+    actual = sum_powers_in_range(3, 5, 2)
+    print('Expected Value', expected)
+    print('Actual Value', actual)
+
+    expected = 142.384776
+    actual = sum_powers_in_range(3, 100, 0.1)
+    print('Expected Value', expected)
+    print('Actual Value', actual)
 
 
 
@@ -113,13 +124,14 @@ def sum_powers_in_range(m, n, p):
     #   test cases; that would defeat the purpose of TESTING!
     # ------------------------------------------------------------------
 
-    sum = m**p
+    sum = 0
 
-    for k in range(n-m):
-        sum = sum + (m+k) **p
+    for k in range(n - m):
+        sum = sum + (m + k) ** p
 
-    sum = sum + n**p
+    sum = sum + n ** p
     return sum
+
 
 # ----------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
