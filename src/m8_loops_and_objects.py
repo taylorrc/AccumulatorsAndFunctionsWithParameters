@@ -215,7 +215,7 @@ def print_cosines():
        68.9855097830147
     """
     # ------------------------------------------------------------------
-    # DONE: 8. Implement this function, per its doc-string above.
+    # TODO: 8. Implement this function, per its doc-string above.
     # Put a statement in  main  to test this function.
     # REQUIREMENT: You must use a   RANGE  statement to solve this problem.
     #
